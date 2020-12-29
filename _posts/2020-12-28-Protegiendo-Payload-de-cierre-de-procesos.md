@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Protegiendo Payload de cierres de procesos"
+tags: Post-explotation  Metasploit Hacking
 ---
-# Protegiendo Payload de cierres de procesos
 
 Que tal chic@s, hoy vengo a mostrarles una técnica muy útil en nuestra fase de Post Explotacion, vamos a proteger nuestro pequeño
 ejecutable de cualquier técnica de cierre, convirtiéndolo en un dolor de cabeza para el administrador del ordenador victima, esta
@@ -25,9 +25,8 @@ yo tengo una session de un ordenador Windows de 32bits.
 
 `use post/windows/manage/self_defense`
 
-He introducimos el id de nuestra session, en mi caso es 1 `set SESSION 1`
+He introducimos el id de nuestra session, en mi caso es 1 `set SESSION 1` ejecutamos con `run` y listo.
 
-**Ejecutamos y vemos la magia**
 ![preview](https://i.ibb.co/njsrT6B/self-defender-2.png)
 
 ## Ordenador victima
