@@ -8,9 +8,9 @@ Que tal chic@s, hoy vengo a mostrarles una técnica muy útil en nuestra fase de
 ejecutable de cualquier técnica de cierre, convirtiéndolo en un dolor de cabeza para el administrador del ordenador victima, esta
 técnica puede ser usada tanto en ordenadores Windows de 32 y 64 bits.
 
-Bueno, nos vamos a Github y descargamos este modulo para metasploit (https://github.com/EgeBalci/MSF-Self-Defense/) pero espera...vamos
-a guardarlo en la siguiente ruta (/opt/metasploit-framework/embedded/framework/modules/post/windows/manage), para luego alojar el fichero
-self_defense.rb (ruby) en ese directorio, listo ya estamos listo para usarlo en nuestros ataques.
+Bueno, nos vamos a Github y descargamos este modulo para metasploit https://github.com/EgeBalci/MSF-Self-Defense/ pero espera...vamos
+a guardarlo en la siguiente ruta `cd /opt/metasploit-framework/embedded/framework/modules/post/windows/manage`, para luego alojar el fichero
+**self_defense.rb (script ruby)** en ese directorio, listo ya estamos listo para usarlo en nuestros ataques.
 
 ## USO:
 
