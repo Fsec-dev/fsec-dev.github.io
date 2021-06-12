@@ -2,6 +2,7 @@
 layout: post
 title:  "Conectando nuestro Script Python con Tor"
 tags: Programacion, Python, Tor
+author: Andrew
 ---
 ![preview](https://i.ibb.co/2hmHfG7/file-1.jpg)
 
