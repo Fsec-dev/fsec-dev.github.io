@@ -26,7 +26,7 @@ Empezamos por la cabecera de nuestro Script, creamos el hashbag y le indicamos q
 vamos a usar el interprete de Python 3, luego exportamos las librerias que vamos a usar
 en este caso vamos a usar **sys** y **requests**.
 
-```
+```python
 #!/usr/bin/env python3
 
 import sys
@@ -38,7 +38,7 @@ conectarnos con Tor, para esto vamos a hacer uso del metodo Session que nos brin
 libreria requests, con esto vamos a crear un proxy solo para usarlo con requests, son mas
 palabras, vamos al codigo...
 
-```
+```python
 def session_tor():
     session = requests.session()
     # Por defecto el sock de Tor en Linux se mantiene en el puerto 9050
@@ -67,10 +67,10 @@ La funcion recibira como parametro la url a la cual nos conectaremos, luego aden
 la funcion creamos una instancia llamada session, la cual usaremos para conectarnos al
 servidor por medio de los nodos de Tor.
 
-```
+```python
 def consulta(host):
     session = session_tor()
-    req = session.get(host, headers={'User-Agent':UA})
+    req = session.get(host)
 
     if req.ok:
         for header in req.headers:
@@ -81,7 +81,7 @@ def consulta(host):
 
 ## Codigo completo
 
-```
+```python
 #!/usr/bin/env python3
 import sys
 import requests
