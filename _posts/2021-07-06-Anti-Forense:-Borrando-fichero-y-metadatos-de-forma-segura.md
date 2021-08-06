@@ -9,7 +9,7 @@ by: Andrew
 
 Que tal a tod@s, en este topics vamos a aprender los métodos antiforense utilizados por Hackers
 paranoicos para borrar sus ficheros, todos los pasos y técnicas fueron probado en BackBox (sistema basado en Ubuntu)
-los métodos son técnicamente efectivos, por lo tanto ten precaucionon de lo que borras.
+los métodos son técnicamente efectivos, por lo tanto ten precaucion al borrar tus ficheros.
 
 ## ¿Por que borrar nuestros ficheros de forma segura?
 
