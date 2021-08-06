@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Anti-Forense: Borrando ficheros de forma segura"
+title:  "Anti-Forense: Borrando ficheros y metadatos de forma segura"
 tags: Anonimato, Opsec, Metadatos
 by: Andrew
 ---
