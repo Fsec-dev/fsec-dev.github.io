@@ -11,7 +11,7 @@ Que tal a tod@s, en este topics vamos a aprender los métodos antiforense utiliz
 paranoicos para borrar sus ficheros, todos los pasos y técnicas fueron probado en BackBox (sistema basado en Ubuntu)
 los métodos son técnicamente efectivos, por lo tanto ten precaucionon de lo que borras.
 
-##¿Por que borrar nuestros ficheros de forma segura?
+## ¿Por que borrar nuestros ficheros de forma segura?
 
 Cuando hacemos Click derecho y borrar en realidad lo que estamos haciendo es esconder el contenido donde
 no lo podamos ver, imagina una fiesta con invitados, en la fiesta están todos los invitados de la lista pero
@@ -22,7 +22,7 @@ y no asi del todo.
 Hay métodos tanto por Hardware como por Software para la recuperación de los datos de un dispositivo
 los cuales son efectivos a la hora de recuperar los datos que no han sido borrados de forma segura.
 
-##Herramientas
+## Herramientas
 
 Las herramientas que vamos a usar son los siguientes: **shred, wipe y mat**.
 
@@ -40,24 +40,24 @@ En las distros de Kali y parrot (no se en las demás) wipe viene instalado por d
 también viene instalado, pero de igual forma he aquí los comandos para instalar las herramientas que utilizaremos…
 
 
-###shred
+### shred
 
 ```sudo apt install shred```
 
-###wipe
+### wipe
 
 ```sudo apt install wipe```
 
-###mat
+### mat
 
 ```sudo apt install mat```
 
-##Usando shred
+## Usando shred
 
 Shred es una de las herramientas que uso casi a diario para borrar logs y ficheros de todo tipo, shred
 es recomendable usarlo para este propósito.
 
-###Borrando un fichero individual:
+### Borrando un fichero individual:
 
 ```shred -v -z -n 10 -u imagen.jpg```
 
@@ -71,37 +71,37 @@ vamos a listar las opciones que hemos introducido…
 -n : Numero de pasadas (por default de 4, lo recomendable es 30 a 40)
 -u : Una vez sobreescrito borrar el fichero
 
-###Borrando listado de ficheros:
+### Borrando listado de ficheros:
 
 Ahora vamos a borrar un listado de ficheros en formato jpg, seria las mismas opciones pero le pasamos
 como parámetro el asterisco seguido de un punto y el nombre del formato de los ficheros ejemplo.
 
 ```shred -v -z -n 10 -u *.jpg```
 
-##Usando wipe borrando particiones y dispositivo USB
+## Usando wipe borrando particiones y dispositivo USB
 
 Aunque wipe nos sirve para borrar ficheros individuales como lo hace shred, su máxima cualidad es la de
 formatear un partición del disco o borrar de forma segura cualquier dispositivo de almacenamiento externo
 pero antes vamos a borrar ficheros individuales.
 
-###Borrando un solo fichero de forma rápida usando 4 pasadas:
+### Borrando un solo fichero de forma rápida usando 4 pasadas:
 
 ```wipe -qfi 1627911080147.jpg```
 
-###Borrando un solo fichero indicando el numero de pasadas en este caso vamos a eliminarlo 10 veces:
+### Borrando un solo fichero indicando el numero de pasadas en este caso vamos a eliminarlo 10 veces:
 
 ```wipe -qfi -Q 10 1627912127302.jpg```
 
-###Borrando datos de dispositivos extraibles:
+### Borrando datos de dispositivos extraibles:
 
 ```wipe -kq /dev/hda3```
 
-###Borrar todo el contenido de un directorio:
+### Borrar todo el contenido de un directorio:
 ```wipe -rfi midirectorio/*```
 
-#Borrando metadatos de ficheros
+## Borrando metadatos de ficheros
 
-##¿Que son los metadatos?
+### ¿Que son los metadatos?
 
 Dejemos que te lo explique la wikipedia…
 
@@ -118,17 +118,17 @@ formato: JPG, DOCX, PDF, ODT, ODX, XLSX, estos documentos pueden contener nombre
 del sistema operativo y en el caso de las imágenes JPG estas pueden contener informacion de geolocalizacion
 de donde fue tomada la fotografia, claro si el teléfono o cámara activo el GPS antes de tomar la fotografia.
 
-##Usando MAT (Metadata Anonymisation Toolkit)
+## Usando MAT (Metadata Anonymisation Toolkit)
 
 MAT es una herramienta de anonimizacion de metadatos, con esta herramienta podemos borrar los metadatos
 
-###Listando los formatos soportados por mat
+### Listando los formatos soportados por mat
 ```mat -l <fichero>```
 
-###Visualizando metadatos del fichero 
+### Visualizando metadatos del fichero 
 ```mat -d <fichero>```
 
-###Borrando metadatos
+### Borrando metadatos
 ```mat <fichero>```
 
 **Mat también cuenta con una interface grafica muy fácil de usar puede invocarla con el comando**
