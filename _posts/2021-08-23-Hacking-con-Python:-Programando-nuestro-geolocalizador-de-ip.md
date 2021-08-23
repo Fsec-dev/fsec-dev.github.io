@@ -22,7 +22,7 @@ por lo tanto toma encuenta usar Python3.
 - **Python3 instalado en tu sistema**
 - **Conexion a internet**
 
-## Comenzemos
+## Comencemos
 
 Para este Script vamos a usar el modulo **Requests** el cual si no lo
 tienes instalado en tu sistema puedes instalarlo con el siguiente comando
@@ -126,11 +126,13 @@ Zona Horaria: {}
 		""".format(ip, country, city, region, geo, isp, timezone))
 ```
 ## Demo:
-<img src="https://i.ibb.co/R3R7Kfn/geoip-capture.png"></img>
+<img src="https://i.ibb.co/R3R7Kfn/geoip-capture.png">
 
 Listo ya tienes tu pequeña herramienta de geoip lista y funcional, si deseas
 usarla desde cualquier parte desde tu terminal puedes copiar el Script a la ruta
 **/sbin** con el siguiente comando... ```cp script.py /sbin/``` ahora ya tienes
 tu pequeña herramienta.
+
+**Script completo:** https://github.com/Fsec-dev/Cursos_Python/blob/main/geoip.py
 
 **Bye and Happy Hacking**
