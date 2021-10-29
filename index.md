@@ -19,8 +19,6 @@ y la programacion, espero que disfruten y aprendan con cada Post. :)
 Soy Andrew Hacker entusiasta, con ligeras tendencias como programador Web (Backend y Frontend), Pitonista de corazon
 amante de la musica derivados del genero del Rock. En mi dia a dia uso Debian como sistema base.
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Fsec-dev)](https://github.com/anuraghazra/github-readme-stats)
-
 ## ./ContactMe
 **Puedes contactarme usando estas direcciones:** 
 - **Email:** ```anonuser_2.0@protonmail.com```
